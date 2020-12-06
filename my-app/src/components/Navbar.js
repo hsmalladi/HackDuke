@@ -31,7 +31,7 @@ function Navbar() {
 			
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             LinkPool
-			<img className='navbar-img' src='/images/linkPoolLogo.png' / >
+			<img className='navbar-img' src='/images/linkPoolLogo.png' />
 	
           </Link>
           <div className='menu-icon' onClick={handleClick}>
