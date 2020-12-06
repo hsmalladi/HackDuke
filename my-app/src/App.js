@@ -1,23 +1,19 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import Navbar from "./components/Navbar/Navbar";
 import './App.css';
-import Home from './components/pages/Home';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Service from './components/pages/Service';
-import SignUp from './components/pages/SignUp';
+import Footer from "./components/Footer";
+import Inputs from "./components/Inputs";
 
 function App() {
   return (
-    <>
-      <Router>
-        <Navbar />
-        <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/map' component={Service} />
-          <Route path='/sign-up' component={SignUp} />
-        </Switch>
-      </Router>
-    </>
+    <div className="page-container">
+      <div className="content-wrap">
+	  <Navbar />
+    <Inputs />
+
+      </div>
+      <Footer />
+    </div>
   );
 }
 

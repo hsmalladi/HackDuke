@@ -7,11 +7,16 @@
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.5.0",
+<<<<<<< HEAD
     "cassandra-driver": "^4.6.1",
     "google-maps-react": "^2.0.6",
     "kerberos": "^1.1.4",
     "mdbreact": "^5.0.0",
     "original-fs": "^1.1.0",
+=======
+    "google-maps-react": "^2.0.6",
+    "mdbreact": "^5.0.0",
+>>>>>>> parent of c450ec4... front page and map template
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
