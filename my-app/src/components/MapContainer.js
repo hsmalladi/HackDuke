@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Map, GoogleApiWrapper } from 'google-maps-react';
+import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 
 const mapStyles = {
   width: '60%',
@@ -15,15 +15,19 @@ class MapContainer extends Component {
         style={mapStyles}
         initialCenter={
           {
-            lat: -1.2884,
-            lng: 36.8233
+            lat: 47.444,
+            lng: -122.176
           }
         }
-      />
+      >
+		<Marker position={{ lat: 48.00, lng: -122.00}} />
+	  </Map>
+
     );
   }
 }
 
+
 export default GoogleApiWrapper({
-  apiKey: 'YOUR_GOOGLE_MAPS_API_KEY_GOES_HERE'
+  apiKey: process.env.API_KEY
 })(MapContainer);
