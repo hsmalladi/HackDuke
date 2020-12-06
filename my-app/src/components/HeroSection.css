@@ -18,6 +18,25 @@ video {
   object-fit: contain;
 }
 
+.about-container {
+  background: #fff;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.about-header {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: #242222;
+}
+
+.about-text {
+  width: 500px;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
 .hero-container > h1 {
   color: #fff;
   font-size: 100px;

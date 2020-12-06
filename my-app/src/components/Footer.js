@@ -3,7 +3,7 @@ import "./Footer.css";
 
 const Footer = () => (
   <footer className="footer">
-    <p>Some footer nonsense!</p>
+    <p> LinkPool </p>
   </footer>
 );
 
