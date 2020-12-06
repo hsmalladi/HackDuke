@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {formatTime, submit} from "../connect-database";
 
 class Inputs extends Component {
     state = {
@@ -26,7 +27,7 @@ class Inputs extends Component {
     mark = (e) => this.setState({ 
         [e.target.name] : e.target.checked
     })
-    
+
     render() {
         return (
         
@@ -188,6 +189,7 @@ class Inputs extends Component {
                     type="submit"
                     value="Submit"
                     className="btn"
+                    onClick={() => submit(this.state)}
                 />
             </form>
         );
